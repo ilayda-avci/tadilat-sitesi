@@ -254,8 +254,20 @@
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 32px 28px;
+      padding: 0;
+      overflow: hidden;
       transition: background 0.2s, transform 0.25s, box-shadow 0.25s;
+    }
+
+    .service-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-card-body {
+      padding: 28px 28px 32px;
     }
 
     .service-card:hover {
@@ -579,41 +591,65 @@
         <div class="services-grid">
 
           <div class="service-card fade-in">
-            <div class="service-icon">
-              <!-- Paint roller icon -->
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="4" rx="2"/>
-                <path d="M6 7v2a2 2 0 002 2h8a2 2 0 002-2V7"/>
-                <line x1="12" y1="13" x2="12" y2="21"/>
-                <line x1="9" y1="21" x2="15" y2="21"/>
-              </svg>
+            <img
+              class="service-card-img"
+              src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&auto=format&fit=crop"
+              alt="Boyama hizmeti"
+              loading="lazy"
+            />
+            <div class="service-card-body">
+              <div class="service-icon">
+                <!-- Paint roller icon -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="4" rx="2"/>
+                  <path d="M6 7v2a2 2 0 002 2h8a2 2 0 002-2V7"/>
+                  <line x1="12" y1="13" x2="12" y2="21"/>
+                  <line x1="9" y1="21" x2="15" y2="21"/>
+                </svg>
+              </div>
+              <h3>Boyama</h3>
+              <p>İç ve dış cephe boyama, dekoratif sıva, alçı ve boya uygulamaları. Temiz işçilik, uzun ömürlü sonuç.</p>
             </div>
-            <h3>Boyama</h3>
-            <p>İç ve dış cephe boyama, dekoratif sıva, alçı ve boya uygulamaları. Temiz işçilik, uzun ömürlü sonuç.</p>
           </div>
 
           <div class="service-card fade-in">
-            <div class="service-icon">
-              <!-- Hammer icon -->
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M15 12l-8.5 8.5a2.121 2.121 0 01-3-3L12 9"/>
-                <path d="M17.64 15L22 10.64"/>
-                <path d="M20.35 6.35L17.65 3.65a2 2 0 00-2.84 0L12 6.5l4.5 4.5 2.81-2.81a2 2 0 00.04-2.84z"/>
-              </svg>
+            <img
+              class="service-card-img"
+              src="https://unsplash.com/photos/person-holding-white-tile-LyQi9DS7AEg"
+              alt="Tadilat hizmeti"
+              loading="lazy"
+            />
+            <div class="service-card-body">
+              <div class="service-icon">
+                <!-- Hammer icon -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 12l-8.5 8.5a2.121 2.121 0 01-3-3L12 9"/>
+                  <path d="M17.64 15L22 10.64"/>
+                  <path d="M20.35 6.35L17.65 3.65a2 2 0 00-2.84 0L12 6.5l4.5 4.5 2.81-2.81a2 2 0 00.04-2.84z"/>
+                </svg>
+              </div>
+              <h3>Tadilat</h3>
+              <p>Mutfak, banyo yenileme, zemin döşeme, alçıpan, asma tavan ve genel tadilat işlemleri.</p>
             </div>
-            <h3>Tadilat</h3>
-            <p>Mutfak, banyo yenileme, zemin döşeme, alçıpan, asma tavan ve genel tadilat işlemleri.</p>
           </div>
 
           <div class="service-card fade-in">
-            <div class="service-icon">
-              <!-- Pipe/water icon -->
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/>
-              </svg>
+            <img
+              class="service-card-img"
+              src="https://unsplash.com/photos/a-man-working-on-a-pipe-in-a-cabinet-wzIjLL4KB-4"
+              alt="Su tesisatı hizmeti"
+              loading="lazy"
+            />
+            <div class="service-card-body">
+              <div class="service-icon">
+                <!-- Pipe/water icon -->
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/>
+                </svg>
+              </div>
+              <h3>Su Tesisatı</h3>
+              <p>Tesisat kurulum ve tamiri, sızdırmazlık, sifon ve vana değişimi, kaçak tespiti ve giderme.</p>
             </div>
-            <h3>Su Tesisatı</h3>
-            <p>Tesisat kurulum ve tamiri, sızdırmazlık, sifon ve vana değişimi, kaçak tespiti ve giderme.</p>
           </div>
 
         </div>
