@@ -16,7 +16,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -62,7 +62,7 @@
     body {
       background-color: var(--bg);
       color: var(--text);
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 17px;
       line-height: 1.6;
       overflow-x: hidden;
@@ -89,8 +89,10 @@
     }
 
     .logo {
-      font-family: 'Instrument Serif', serif;
-      font-size: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
       color: var(--text);
       text-decoration: none;
     }
@@ -120,10 +122,17 @@
 
     /* ── HERO ── */
     .hero {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 100px 24px 80px;
+      width: 100%;
+      padding: 120px 24px 100px;
       text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     .hero-badge {
@@ -141,15 +150,17 @@
     }
 
     .hero h1 {
-      font-family: 'Instrument Serif', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(2.4rem, 6vw, 4rem);
-      line-height: 1.15;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
       margin-bottom: 20px;
       color: var(--text);
     }
 
     .hero h1 em {
-      font-style: italic;
+      font-style: normal;
       color: var(--accent);
     }
 
@@ -227,9 +238,11 @@
     }
 
     .section-title {
-      font-family: 'Instrument Serif', serif;
+      font-family: 'Inter', sans-serif;
       font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
       margin-bottom: 16px;
     }
 
@@ -317,7 +330,7 @@
     }
 
     .stat-number {
-      font-family: 'Instrument Serif', serif;
+      font-family: 'Inter', sans-serif;
       font-size: 2.6rem;
       color: var(--accent);
       line-height: 1;
@@ -342,7 +355,7 @@
     }
 
     .contact-info h3 {
-      font-family: 'Instrument Serif', serif;
+      font-family: 'Inter', sans-serif;
       font-size: 1.6rem;
       margin-bottom: 28px;
     }
@@ -404,7 +417,7 @@
     }
 
     .contact-cta-box h4 {
-      font-family: 'Instrument Serif', serif;
+      font-family: 'Inter', sans-serif;
       font-size: 1.4rem;
       margin-bottom: 12px;
     }
@@ -526,7 +539,7 @@
         grid-template-columns: 1fr;
       }
 
-      .hero { padding: 72px 20px 64px; }
+      .hero { padding: 80px 20px 72px; }
 
       .header-cta span { display: none; }
     }
@@ -558,7 +571,8 @@
 
   <!-- HERO -->
   <main>
-    <div class="hero fade-in" style="background:url('assets/images/hero.jpg') center/cover no-repeat; width:100vw; margin-left:calc(50% - 50vw); padding:100px 24px; border-radius:0;">
+    <div class="hero fade-in" style="background-image:url('assets/images/hero.jpg');">
+      <div class="hero-content">
       <span class="hero-badge">Profesyonel Ev Hizmetleri</span>
       <h1>Eviniz için <em>uzman eller,</em><br>güvenilir hizmet</h1>
       <p>Boyama, tadilat ve su tesisatı işlerinizde deneyimli ustalarımızla yanınızdayız. Hızlı, temiz ve garantili.</p>
@@ -578,6 +592,7 @@
           </svg>
           Hemen Ara
         </a>
+      </div>
       </div>
     </div>
 
